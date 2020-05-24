@@ -1,0 +1,2 @@
+include ':app', ':genericsdemo', ':annotation_reflect', ':thread', ':serializable'
+rootProject.name='xiangxue'
