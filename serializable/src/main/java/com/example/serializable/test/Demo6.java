@@ -22,7 +22,7 @@ public class Demo6  implements Serializable {
         User6Child demo1 = new User6Child("test serializable","男",12);
         oos.writeObject(demo1);
         oos.close();
-        System.out.println("================");
+        System.out.println("====== ==========");
         byte[] bytes = out.toByteArray();
 
         ByteArrayInputStream bis = new ByteArrayInputStream(bytes);
