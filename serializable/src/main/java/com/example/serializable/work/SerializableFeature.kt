@@ -98,36 +98,38 @@ open class Student : Serializable {
 
 
 fun main() {
-//    val student = Student("张三", "男", 11, Date(),
-//            mutableListOf(Course1("李四", 12), Course1("网二", 11)))
+    val student = Student("张三", "男", 11, Date(),
+            mutableListOf(Course1("李四", 12), Course1("网二", 11)))
 
-    val student = Student1("5024")
-    println("student: $student")
+//    val student = Student1("5024")
+   /* println("student: $student")
     val out = ByteArrayOutputStream()
-    val oos = ObjectOutputStream(out)
+    val oos = ObjectOutputStream(out)*/
 
     /*val oos = ObjectOutputStream( FileOutputStream(
              File("test1.txt")))*/
-    oos.writeObject(student)
+//    oos.writeObject(student)
 //    student.score = 78f
 // oos.reset();
     // oos.reset();
 //    oos.writeUnshared(student)
 // oos.writeObject(course);
-    // oos.writeObject(course);
+  /*   oos.writeObject(student);
     val bs: ByteArray = out.toByteArray()
-    oos.close()
+    oos.close()*/
     // Thread.sleep(5000)注意不可使用延迟测试static,因为static属于jvm,jvm加载类时就初始化了,以后不管做什么都不会变了,
     // 要启动两次,一次写入,关闭程序后在启动程序,加载,这时就会发现时间不同
     //  25 00:34:24 CST 2020
     //  25 00:34:48 CST 2020
-    val ois = ObjectInputStream(ByteArrayInputStream(bs))
+//    val ois = ObjectInputStream(ByteArrayInputStream(bs))
     /*  val ois = ObjectInputStream( FileInputStream(
                File("test1.txt")))*/
-    val student1 = ois.readObject()
+//    val student1 = ois.readObject()
 //    val student2 = ois.readObject() as Student
-    println("student1: $student1")
+//    println("student1: $student1")
 //    println("student2: $student2")
 //    println(student1 == student2)
 //    println(student1.equals(student2))
+
+
 }
