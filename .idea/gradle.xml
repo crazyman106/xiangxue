@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$/annotation_reflect" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/genericsdemo" />
+            <option value="$PROJECT_DIR$/reinforce_io" />
+            <option value="$PROJECT_DIR$/reinforce_io_library" />
             <option value="$PROJECT_DIR$/serializable" />
             <option value="$PROJECT_DIR$/thread" />
           </set>
