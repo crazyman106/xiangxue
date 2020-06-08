@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
+import javax.crypto.spec.SecretKeySpec;
+
 /**
  * author : fenzili
  * e-mail : 291924028@qq.com
@@ -24,7 +26,6 @@ public class Signature {
                 "-signedjar", signedApk.getAbsolutePath(),
                 unsignedApk.getAbsolutePath(),
                 "androiddebugkey"};
-
         Process process = Runtime.getRuntime().exec(cmd);
         System.out.println("start sign");
         try {
