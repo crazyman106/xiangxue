@@ -1,2 +1,3 @@
+include ':ui'
 include ':app', ':genericsdemo', ':annotation_reflect', ':thread', ':serializable', ':reinforce_io', ':reinforce_io_library'
 rootProject.name='xiangxue'
