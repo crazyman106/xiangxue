@@ -39,6 +39,11 @@ class FlowLayout : ViewGroup {
     }
 
 
+    /**
+     * 1.父view通过onMeasure()将测量规格传递到子类,子类通过MeasureSpec获取到大小和规格,通过getChildMeasureSpec,子类的子类获取到它自己的测量规格
+     * 2.通过子类的子类的测量规格和layoutparams调用 childView.measure(childMeasureSpecWidth, childMeasureSpecHeight)后,获取到子类的测量大小
+     * 3.通过子类获取到的测量大小和子类的子类计算后获取到的测量大小对比调用setMeasuredDimension,给子类设置大小
+     */
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         // onMeasure 会多次调用
         allLines.clear();

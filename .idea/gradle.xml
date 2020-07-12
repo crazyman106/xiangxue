@@ -17,6 +17,8 @@
             <option value="$PROJECT_DIR$/reinforce_io" />
             <option value="$PROJECT_DIR$/reinforce_io_library" />
             <option value="$PROJECT_DIR$/serializable" />
+            <option value="$PROJECT_DIR$/skin" />
+            <option value="$PROJECT_DIR$/skinlib" />
             <option value="$PROJECT_DIR$/thread" />
             <option value="$PROJECT_DIR$/ui" />
           </set>
